@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "tailwindcss";
+::-webkit-scrollbar {
+  display: none;
+}
+html {
+  scrollbar-width: none;
+}
+body {
+  -ms-overflow-style: none;
+}
+@theme {
+  --color-primary: #ef4444;
+  --color-bg: #10141b;
+  --font-sans: "Open Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px rgba(255, 255, 255, 0.05) inset !important;
+  -webkit-text-fill-color: white !important;
+  transition: background-color 9999s ease-in-out 0s !important;
+}
+
+.custom-input-number .ant-input-number-input {
+  height: 35px !important;
+  line-height: 35px !important;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+  height: 100%;
+}
